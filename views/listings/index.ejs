@@ -33,64 +33,10 @@
   }
 </style>
 
-<!-- <div class="fix" id="filters">
-  <div class="filter">
-    <div><i class="fa-solid fa-fire"></i></div>
-    <p>Trending</p>
-  </div>
-  <div class="filter">
-    <div><i class="fa-solid fa-bed"></i></div>
-    <p>Rooms</p>
-  </div>
-  <div class="filter">
-    <div><i class="fa-solid fa-mountain-city"></i></div>
-    <p>Iconic Cities</p>
-  </div>
-  <div class="filter">
-    <div><i class="fa-solid fa-mountain"></i></div>
-    <p>Mountains</p>
-  </div>
-  <div class="filter">
-    <div><i class="fa-brands fa-fort-awesome"></i></div>
-    <p>Castles</p>
-  </div>
-  <div class="filter">
-    <div><i class="fa-solid fa-person-swimming"></i></div>
-    <p>Amazing Pools</p>
-  </div>
-  <div class="filter">
-    <div><i class="fa-solid fa-campground"></i></div>
-    <p>Camping</p>
-  </div>
-  <div class="filter">
-    <div><i class="fa-solid fa-cow"></i></div>
-    <p>Farms</p>
-  </div>
-  <div class="filter">
-    <div><i class="fa-solid fa-snowflake"></i></div>
-    <p>Arctic</p>
-  </div>
-
-  <div class="tax-toggle">
-    <div class="form-check form-switch">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        id="flexSwitchCheckDefault"
-      />
-      <label
-        class="form-check-label"
-        for="flexSwitchCheckDefault"
-        class="tax-toggle"
-        >Display taxes</label
-      >
-    </div>
-  </div>
-</div> -->
-
-<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 cols-1 mt-3">
   <% allListings.forEach(listing => { %>
-  <div class="col">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <!-- Adjust the column classes here -->
     <a href="/listings/<%= listing._id %>" class="listing-link">
       <div class="card listing-card">
         <% if (listing.image && typeof listing.image === 'object' &&
